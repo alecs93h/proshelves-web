@@ -113,7 +113,7 @@ export default function ProductActions({
     setIsAdding(false)
   }
 
-  console.log("ajunge aici??", { isValidVariant })
+  console.log("ajunge aici??", { selectedVariant, inStock, isValidVariant })
 
   return (
     <>

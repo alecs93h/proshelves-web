@@ -24,7 +24,7 @@ export default async function Home(props: {
     fields: "id, handle, title",
   })
 
-  console.log({region, collections})
+  console.log({ region, collections })
 
   if (!collections || !region) {
     return null
