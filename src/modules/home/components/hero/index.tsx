@@ -25,7 +25,7 @@ const Hero = () => {
             level="h2"
             className="text-3xl leading-10 text-gray-200 font-normal drop-shadow-lg mt-2"
           >
-            Organizare perfectă pentru spațiul tău
+            Soluții inovatoare de depozitare pentru e-commerce și logistică
           </Heading>
         </span>
         {/*<a*/}
