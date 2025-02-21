@@ -27,7 +27,11 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
   }
 
   const images = [
-    "https://www.spazio-sws.com/images/blog/Akilli_Depo_Raf_Sistemleri.jpg",
+    {
+      id: "1",
+      url: "https://www.spazio-sws.com/images/blog/Akilli_Depo_Raf_Sistemleri.jpg",
+      rank: 1,
+    },
   ]
 
   return (
