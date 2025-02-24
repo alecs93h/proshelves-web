@@ -52,7 +52,7 @@ const ImageOrPlaceholder = ({
 }: Pick<ThumbnailProps, "size"> & { image?: string }) => {
   return image ? (
     <Image
-      src="https://www.spazio-sws.com/images/blog/Akilli_Depo_Raf_Sistemleri.jpg"
+      src={image}
       alt="Thumbnail"
       className="absolute inset-0 object-cover object-center"
       draggable={false}
