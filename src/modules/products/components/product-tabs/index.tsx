@@ -14,11 +14,11 @@ type ProductTabsProps = {
 const ProductTabs = ({ product }: ProductTabsProps) => {
   const tabs = [
     {
-      label: "Product Information",
+      label: "Informatii despre produs",
       component: <ProductInfoTab product={product} />,
     },
     {
-      label: "Shipping & Returns",
+      label: "Livrare & Retur",
       component: <ShippingInfoTab />,
     },
   ]
@@ -85,31 +85,33 @@ const ShippingInfoTab = () => {
         <div className="flex items-start gap-x-2">
           <FastDelivery />
           <div>
-            <span className="font-semibold">Fast delivery</span>
+            <span className="font-semibold">Livrare și Montaj Specializat</span>
             <p className="max-w-sm">
-              Your package will arrive in 3-5 business days at your pick up
-              location or in the comfort of your home.
+              Livrăm și instalăm rafturile în 5-10 zile lucrătoare. Echipa
+              noastră de specialiști se ocupă de tot procesul, de la transport
+              până la montajul final și testarea sistemelor.
             </p>
           </div>
         </div>
         <div className="flex items-start gap-x-2">
           <Refresh />
           <div>
-            <span className="font-semibold">Simple exchanges</span>
+            <span className="font-semibold">Garanție Extinsă</span>
             <p className="max-w-sm">
-              Is the fit not quite right? No worries - we&apos;ll exchange your
-              product for a new one.
+              Oferim verificare tehnică gratuită în primele 30 de zile și
+              asistență pentru optimizarea configurației rafturilor conform
+              nevoilor dumneavoastră.
             </p>
           </div>
         </div>
         <div className="flex items-start gap-x-2">
           <Back />
           <div>
-            <span className="font-semibold">Easy returns</span>
+            <span className="font-semibold">Retur Simplificat</span>
             <p className="max-w-sm">
-              Just return your product and we&apos;ll refund your money. No
-              questions asked – we&apos;ll do our best to make sure your return
-              is hassle-free.
+              În cazul în care produsul nu corespunde specificațiilor tehnice
+              comandate, asigurăm returul și rambursarea integrală în maximum 14
+              zile, inclusiv demontarea și transportul.
             </p>
           </div>
         </div>

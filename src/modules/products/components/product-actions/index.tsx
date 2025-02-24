@@ -159,8 +159,8 @@ export default function ProductActions({
           {!selectedVariant && !options
             ? "Select variant"
             : !inStock || !isValidVariant
-              ? "Out of stock"
-              : "Add to cart"}
+              ? "Selectează varianta"
+              : "Adaugă în coș"}
         </Button>
         <MobileActions
           product={product}

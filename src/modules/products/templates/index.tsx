@@ -10,6 +10,7 @@ import SkeletonRelatedProducts from "@modules/skeletons/templates/skeleton-relat
 import { notFound } from "next/navigation"
 import ProductActionsWrapper from "./product-actions-wrapper"
 import { HttpTypes } from "@medusajs/types"
+import changeBaseUrl from "@lib/util/changeBaseUrl"
 
 type ProductTemplateProps = {
   product: HttpTypes.StoreProduct
@@ -26,6 +27,11 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
     return notFound()
   }
 
+  const images = product.images?.map((image) => ({
+    ...image,
+    url: changeBaseUrl(image.url || ""),
+  }))
+
   return (
     <>
       <div
@@ -37,7 +43,7 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
           <ProductTabs product={product} />
         </div>
         <div className="block w-full relative">
-          <ImageGallery images={product?.images || []} />
+          <ImageGallery images={images || []} />
         </div>
         <div className="flex flex-col small:sticky small:top-48 small:py-0 small:max-w-[300px] w-full py-8 gap-y-12">
           <ProductOnboardingCta />

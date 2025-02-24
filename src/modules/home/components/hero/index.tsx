@@ -6,10 +6,12 @@ const Hero = () => {
     <div
       className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle"
       style={{
-        backgroundImage: "url('/images/hero.jpg')",
+        backgroundImage:
+          "url('https://bradfordsystems.com/wp-content/uploads/2023/10/Industrial-Storage.webp')",
         backgroundSize: "cover",
-        backgroundPosition: "center",
         filter: "grayscale(100%)",
+        backgroundAttachment: "fixed",
+        backgroundPosition: "bottom"
       }}
     >
       <div className="absolute inset-0 bg-black/40" /> {/* opacity 40% */}

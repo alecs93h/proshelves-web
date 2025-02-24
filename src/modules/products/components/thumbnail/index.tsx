@@ -3,6 +3,7 @@ import Image from "next/image"
 import React from "react"
 
 import PlaceholderImage from "@modules/common/icons/placeholder-image"
+import changeBaseUrl from "@lib/util/changeBaseUrl"
 
 type ThumbnailProps = {
   thumbnail?: string | null
@@ -41,7 +42,10 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
       )}
       data-testid={dataTestid}
     >
-      <ImageOrPlaceholder image={initialImage} size={size} />
+      <ImageOrPlaceholder
+        image={changeBaseUrl(initialImage || "")}
+        size={size}
+      />
     </Container>
   )
 }
