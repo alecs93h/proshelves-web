@@ -157,7 +157,7 @@ export default function ProductActions({
           data-testid="add-product-button"
         >
           {!selectedVariant && !options
-            ? "Select variant"
+            ? "Selectează varianta"
             : !inStock || !isValidVariant
               ? "Selectează varianta"
               : "Adaugă în coș"}
